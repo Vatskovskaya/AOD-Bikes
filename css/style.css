@@ -2,12 +2,58 @@ body{
 	position: relative;
 	font-family: 'Lato', Arial, sans-serif;
 }
-
+h1,h2,h3,h4,h5,h6,p,li,ul,ol,img{
+	margin: 0;
+	padding: 0;
+}
 a{
 	text-decoration: none;
 }
-.wrapper{
+
+.title{
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+
+	color: #353738;
 }
+
+.subtitle{
+	font-size: 16px;
+	line-height: 30px;
+	color: #848789;
+}
+
+.underline{
+	position: relative;
+
+}
+.underline::after{
+	content: "";
+	display: block;
+	width: 50px;
+	border-bottom: 1px solid #d7d7d7;
+	position: absolute;
+	bottom: -40px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.block::before{
+	content: "";
+  	border: 20px solid transparent;
+	border-top: 20px solid #000;
+	display: block;
+	width: 0;
+	height: 0;
+	position: absolute;
+	left: 50%;
+	bottom: -130px;
+	transform: translateX(-50%);
+}
+
+.wrapper{}
 
 /*Header*/
 .header{
@@ -22,12 +68,11 @@ a{
 	display: flex;
 	justify-content: center;
     align-items: center;
+    gap: 62px;
 }
 
 .header__navigation-logo{
 	order: 2;
-	padding-left: 30px;
-	padding-right: 10px;
 }
 
 .header__navigation-list-1{
@@ -36,6 +81,7 @@ a{
 	font-size: 13px;
 	text-transform: uppercase;
 	color: #4d4959;
+	padding: 0;
 
 	display: flex;
 	order: 1;
@@ -46,6 +92,7 @@ a{
 	font-weight: bold;
 	font-size: 13px;
 	text-transform: uppercase;
+	padding: 0;
 
 	color: #4d4959;
 
@@ -59,6 +106,7 @@ a{
 	font-size: 13px;
 	text-transform: uppercase;
 
+
 	color: #4d4959;
 }
 
@@ -68,55 +116,111 @@ a{
 }
 
 .dott::after{
-	content: ".";
-	padding-left: 15px;
-	padding-right: 15px;
+	content: "";
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	background-color: #4d4959;
+	margin-left: 35px;
+	margin-right: 35px;
+
+	display: inline-block;
 
 }
 
 /*Main Section. Greetings Section*/
-.greetings{
-	
-}
-
 .greetings img{
 	width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 
-/*New Generation*/
-.new-generation{
+/*About Us Section*/
+.about-us{
+	background-color: #f7f7f7;
 	padding-top: 115px;
 	padding-bottom: 140px;
+}
+
+.about-us__info{
 	max-width: 1080px;
 	margin: 0 auto;
 	text-align: center;
 }
-
-.new-generation-info h2{
-	font-size: 18px;
-	text-transform: uppercase;
-	font-weight: bold;
-
-	color: #353738;
-}
-.new-generation-info p{
+.about-us__info p{
 	font-size: 18px;
 	line-height: 2em;
-	color: #848789;
 }
 
-/*Vintage-Oliva*/
-.vintage-oliva{
+.about-us__info img{
+	margin-bottom: 30px;
+}
+
+/*Work Section*/
+.work{
 	display: flex;
 }
-.img2{
-	
+
+.work__image-block{
+    position: relative;
+    flex-basis: 66.666666%;
+    flex-shrink: 0;
+
 }
-.vintage-oliva-aside{
-	
+.work__big-image{
+	max-width: 100%;
+	display: block;
+	width: 100%;
 }
-.img3{
-	
+
+.work__logo{
+	position: absolute;
+	max-width: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.work-aside{
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 533px;
+	align-items: center;
+
+	position: relative;
+}
+
+.work-aside__logo{
+	padding-top: 70px;
+	padding-bottom: 30px;
+}
+
+.work-aside h2{
+	margin-bottom: 15px;
+}
+.work-aside p{
+	max-width: 410px;
+
+	padding-bottom: 40px;
+}
+
+.work-aside__img{
+	max-width: 100%;
+
+	padding: 0;
+}
+
+/*Shop Section*/
+.shop{
+	display: flex;
+}
+
+.shop-aside{
+	display: flex;
+	flex-direction: column;
+}
+
+.shop-aside__logo{
+
 }
