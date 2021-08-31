@@ -331,7 +331,9 @@ a{
 	background-color: #f7f7f7;
 	padding-top: 120px;
 	padding-bottom: 175px;
+}
 
+.social__container{
 	max-width: 1040px;
 	margin: 0 auto;
 	text-align: center;
@@ -365,7 +367,6 @@ a{
 	background-image: url(../img/Layer-9.jpg);
 	background-size: cover;
 	grid-column: 1/2;
-
 }
 
 .shop_img2{
@@ -390,7 +391,7 @@ a{
 #shop_img5{
 	grid-column: 4/5;
     grid-row: 1/3;
-    display: block;
+    /*display: block;*/
     width: 100%;
 }
 .shop_img6{
@@ -557,6 +558,42 @@ a{
 		display: none;
 	}
 }
+@media (max-width: 1023px) {
+	.shop{
+		grid-template-rows: repeat(4, minmax(200px, 1fr));
+	}
+	.shop_img1{
+		grid-column: 1/3;
+	}
+	.shop_img2{
+		grid-column: 3/5;
+	    grid-row: 1/2;
+	}
+	.shop_img3{
+		grid-column: 1/5;
+	    grid-row: 2/3;
+	}
+	.shop_img4{
+		grid-column: 5/7;
+	    grid-row: 1/3;
+	}
+
+	#shop_img5{
+		grid-column: 1/3;
+	    grid-row: 3/5;
+	}
+	.shop_img6{
+		grid-column: 3/7;
+	}
+	.shop_img7{
+		grid-column: 3/5;
+	    grid-row: 4/5;
+	}
+	.shop_img8{
+		grid-column: 5/7;
+	    grid-row: 4/5;
+	}
+}
 
 @media (max-width: 850px) {
 	.container{
@@ -568,6 +605,41 @@ a{
 	}
 	.hamburger{
 		display: none;
+	}
+
+	.shop{
+		grid-template-rows: repeat(4, minmax(200px, 1fr));
+	}
+	.shop_img1{
+		grid-column: 1/3;
+	}
+	.shop_img2{
+		grid-column: 3/5;
+	    grid-row: 1/2;
+	}
+	.shop_img3{
+		grid-column: 1/5;
+	    grid-row: 2/3;
+	}
+	.shop_img4{
+		grid-column: 5/7;
+	    grid-row: 1/3;
+	}
+
+	#shop_img5{
+		grid-column: 1/3;
+	    grid-row: 3/5;
+	}
+	.shop_img6{
+		grid-column: 3/7;
+	}
+	.shop_img7{
+		grid-column: 3/5;
+	    grid-row: 4/5;
+	}
+	.shop_img8{
+		grid-column: 5/7;
+	    grid-row: 4/5;
 	}
 }
 /*768px - 480px - @media (max-width: 768px) */
@@ -735,6 +807,42 @@ a{
 	}
 	.social p{
 		font-size: 18px;
+	}
+	/*Shop Section*/
+	.shop{
+		grid-template-rows: repeat(6, minmax(100px, 1fr));
+	}
+	.shop_img1{
+		grid-column: 1/4;
+	}
+	.shop_img2{
+		grid-column: 4/7;
+	    grid-row: 1/2;
+	}
+	.shop_img3{
+		grid-column: 1/7;
+	    grid-row: 2/3;
+	}
+	.shop_img4{
+		grid-column: 1/4;
+	    grid-row: 3/5;
+	}
+
+	#shop_img5{
+		grid-column: 4/7;
+	    grid-row: 3/5;
+	}
+	.shop_img6{
+		grid-column: 1/7;
+		grid-row: 5/6;
+	}
+	.shop_img7{
+		grid-column: 1/4;
+	    grid-row: 6/7;
+	}
+	.shop_img8{
+		grid-column: 4/7;
+	    grid-row: 6/7;
 	}
 
 	/*Login Section*/
