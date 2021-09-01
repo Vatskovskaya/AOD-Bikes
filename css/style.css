@@ -330,17 +330,12 @@ a{
 .social{
 	background-color: #f7f7f7;
 	padding-top: 120px;
-	padding-bottom: 175px;
-}
-
-.social__container{
-	max-width: 1040px;
-	margin: 0 auto;
+	padding-bottom: 70px;
 	text-align: center;
 }
 
 .social img{
-	margin-bottom: 25px;
+	margin:0 auto 25px;
 }
 .social h2{
 	font-size: 18px;
@@ -354,7 +349,28 @@ a{
 .social p{
 	font-size: 24px;
 	font-style: italic;
+	margin-bottom: 80px;
 }
+/*Social Section SLIDER*/
+body .slick-dots li button:before{
+    content: "";
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    padding: 0px;
+    cursor: pointer;
+    color: transparent;
+    border: 1px solid #a9afb3;
+    outline: none;
+    background: transparent;
+}
+
+body .slick-dots li.slick-active button:before{
+	content: "";
+    /*opacity: .75;*/
+    background-color: #a9afb3;
+}
+
 
 /*Shop Section*/
 .shop{
@@ -799,7 +815,7 @@ a{
 	/*Social Section*/
 	.social{
 		padding-top: 60px;
-		padding-bottom: 70px;
+		padding-bottom: 60px;
 	}
 
 	.social h2{
@@ -807,6 +823,7 @@ a{
 	}
 	.social p{
 		font-size: 18px;
+		margin-bottom: 40px;
 	}
 	/*Shop Section*/
 	.shop{
@@ -963,6 +980,13 @@ a{
 		text-align: justify;
 	}
 	/*--------*/
+	.social{
+		padding-bottom: 50px
+	}
+	.social p{
+		margin-bottom: 40px
+	}
+
 	.discover a{
 		width: 170px;
     	height: 50px;
