@@ -352,7 +352,7 @@ a{
 	margin-bottom: 80px;
 }
 /*Social Section SLIDER*/
-body .slick-dots li button:before{
+.slick-dots li button:before{
     content: "";
     width: 11px;
     height: 11px;
@@ -365,9 +365,8 @@ body .slick-dots li button:before{
     background: transparent;
 }
 
-body .slick-dots li.slick-active button:before{
+.slick-dots li.slick-active button:before{
 	content: "";
-    /*opacity: .75;*/
     background-color: #a9afb3;
 }
 
